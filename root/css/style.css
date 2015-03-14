@@ -1,0 +1,278 @@
+
+/*
+
+GLOBAL CSS
+
+*/
+
+body {
+	padding:0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F0EDE0;
+	background-image: url("../images/background.jpeg");
+	background-position: left top;
+	background-size:cover;
+	color:#fff;
+}
+
+#container {
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding:0;
+}
+
+/*The code for the button class is from http://www.bestcssbuttongenerator.com/*/
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+input {
+	margin-top: 12px;
+	padding:5px;
+}
+
+input[type=text] {
+	width:300px;
+	margin-top: 10px;
+}
+
+
+/*
+
+TOP NAV
+
+*/
+
+
+nav {
+	width:100%;
+	height:100px;
+	background-color: #242424;
+}
+
+#logo {
+	font-size: 2.2em;
+	color: #16B5E4;
+	display: block;
+	float:left;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-family: 'Roboto Slab', serif;
+}
+
+#nav-join-button{
+	float:right;
+	padding:20px;
+	font-size:1.2em;
+	margin-top:15px;
+	margin-right:20px;
+
+}
+
+/*
+
+MAIN TOP
+
+*/
+
+#main-top {
+	width:80%%;
+	margin:auto;
+	height:100%;
+}
+
+#subtitle {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#subtitle {
+	display:block;
+	font-size: 1.5em;
+}
+
+.who {
+	height:125px;
+	margin-top: 40px;
+	clear:both;
+	width:100%;
+}
+
+
+.who img {
+	display:block;
+	float:left;
+	margin-right: 40px;
+	width:125px;
+	height:125px;
+}
+
+.who ul {
+	margin-left: 20px;
+}
+
+/*
+OVERLAY
+*/
+
+.overlay {
+	background-color: rgba(0,0,0,.4);
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	transition:width 2s;
+}
+
+#signupform {
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+	background-color: #000;
+	padding:30px;
+    box-shadow: 7px 7px 6px rgba(0,0,0,.3);
+}
+
+#signupform form {
+	margin: auto;
+	width:315px;
+	height:100%;
+}
+
+.name-field-signup {
+	width:136px !important;
+	float:left;
+}
+
+.name-field-signup[name="lastName"] {
+	margin-left: 10px;
+	float:right;
+}
+
+.signup-submit-button{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width:315px;
+	font-size: 1.2em;
+	padding:10px;
+}
+
+.close-signup-overlay {
+	float:right;
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (max-width: 550px){
+	
+	body{
+
+	}
+
+	nav {
+		height:160px;
+		position: absolute;
+		top:0;
+	}
+
+	#logo {
+		text-align: center;
+		float:none;
+		clear:both;
+	}
+	#nav-join-button{
+		display:block;
+		text-align: center;
+		float:none;
+		margin: auto;
+	}
+
+	#main-top {
+		margin-top: 180px;
+		font-size: .8em;
+	}
+
+
+	#signupform{
+		margin-top: 160px;
+		width:100%;
+		padding:10px;
+	}
+
+	.close-signup-overlay {
+	margin-top: 10px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
